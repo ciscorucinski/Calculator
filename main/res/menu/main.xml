@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single" android:visible="true">
+        <item
+            android:id="@+id/action_calculator_simple"
+            android:orderInCategory="100"
+            android:showAsAction="ifRoom|withText"
+            android:title="@string/menu_calculator_main"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/action_calculator_doge"
+            android:orderInCategory="100"
+            android:showAsAction="ifRoom|withText"
+            android:title="@string/menu_calculator_doge"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/action_calculator_static"
+            android:orderInCategory="100"
+            android:showAsAction="ifRoom|withText"
+            android:title="@string/menu_calculator_static"
+            android:checkable="true"/>
+
+    </group>
+
+    <item android:title="@string/menu_mode"
+        android:orderInCategory="101">
+        <menu>
+            <group android:checkableBehavior="single" android:visible="true" >
+                <item
+                    android:id="@+id/action_calculator_sign"
+                    android:orderInCategory="100"
+                    android:showAsAction="collapseActionView"
+                    android:title="@string/menu_mode_sign"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/action_calculator_noun"
+                    android:orderInCategory="100"
+                    android:showAsAction="collapseActionView"
+                    android:title="@string/menu_mode_noun"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/action_calculator_verb"
+                    android:orderInCategory="100"
+                    android:showAsAction="collapseActionView"
+                    android:title="@string/menu_mode_verb"
+                    android:checkable="true"/>
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

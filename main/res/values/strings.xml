@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculator</string>
+    <string name="menu_calculator_main">Regular</string>
+    <string name="menu_calculator_doge">Doge</string>
+    <string name="menu_calculator_static">Static</string>
+    <string name="menu_mode">Display Mode</string>
+    <string name="menu_mode_sign">Sign Form</string>
+    <string name="menu_mode_noun">Noun Form</string>
+    <string name="menu_mode_verb">Verb Form</string>
+    <string name="ui_label_number1">Number 1</string>
+    <string name="ui_label_number2">Number 2</string>
+    <string name="ui_label_result">Result</string>
+    <string name="ui_label_addition">+</string>
+    <string name="ui_label_subtraction">-</string>
+    <string name="ui_label_multiplication">×</string>
+    <string name="ui_label_division">÷</string>
+
+</resources>
