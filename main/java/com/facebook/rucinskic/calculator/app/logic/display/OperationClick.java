@@ -1,10 +1,10 @@
-package com.facebook.rucinskic.calculator.app.logic;
+package com.facebook.rucinskic.calculator.app.logic.display;
 
 import android.view.View;
 
-import com.facebook.rucinskic.calculator.app.builder.ExpressionState;
-import com.facebook.rucinskic.calculator.app.strategy.Operation;
-import com.facebook.rucinskic.calculator.app.ui.ICalculatorAbstraction;
+import com.facebook.rucinskic.calculator.app.logic.builder.ExpressionState;
+import com.facebook.rucinskic.calculator.app.logic.strategy.Operation;
+import com.facebook.rucinskic.calculator.app.ui.interfaces.ICalculatorAbstraction;
 
 /**
  * Created by Christopher on 7/4/2014.

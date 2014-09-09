@@ -1,4 +1,4 @@
-package com.facebook.rucinskic.calculator.app.ui;
+package com.facebook.rucinskic.calculator.app.ui.interfaces;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,20 +8,19 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.facebook.rucinskic.calculator.app.builder.ExpressionState;
-import com.facebook.rucinskic.calculator.app.logic.BinaryOperation;
-import com.facebook.rucinskic.calculator.app.logic.OperationClick;
+import com.facebook.rucinskic.calculator.app.logic.builder.ExpressionState;
+import com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation;
+import com.facebook.rucinskic.calculator.app.logic.display.OperationClick;
 import com.facebook.rucinskic.calculator.app.R;
-import com.facebook.rucinskic.calculator.app.test.IExpression;
+import com.facebook.rucinskic.calculator.app.logic.display.IExpression;
+import com.facebook.rucinskic.calculator.app.ui.MainActivity;
+import com.facebook.rucinskic.calculator.app.ui.MainActivityDoge;
+import com.facebook.rucinskic.calculator.app.ui.MainActivityStatic;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.Add;
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.Divide;
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.Multiply;
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.Subtract;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.Add;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.Divide;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.Multiply;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.Subtract;
 
 /**
  * Created by Christopher on 8/6/2014.
@@ -32,7 +31,7 @@ public abstract class BaseCalculatorActivity extends Activity implements ICalcul
 
     protected abstract BinaryOperation.Display getDefaultDisplayMode();
 
-    void initializeOperationButtons() {
+    protected void initializeOperationButtons() {
 
         final Button btnAdd = (Button) findViewById(R.id.btnAddition);
         final Button btnSub = (Button) findViewById(R.id.btnSubtract);
@@ -82,7 +81,7 @@ public abstract class BaseCalculatorActivity extends Activity implements ICalcul
         return super.onOptionsItemSelected(item);
     }
 
-    static String getNumberAsString(final EditText textBox) {
+    protected static String getNumberAsString(final EditText textBox) {
 
         final Editable text = textBox.getText();
 
@@ -105,7 +104,7 @@ public abstract class BaseCalculatorActivity extends Activity implements ICalcul
 //
 //    }
 
-    class Publish {
+    protected class Publish {
 
         private final ExpressionState state;
 

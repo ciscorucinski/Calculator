@@ -1,6 +1,6 @@
-package com.facebook.rucinskic.calculator.app.test;
+package com.facebook.rucinskic.calculator.app.logic.display;
 
-import com.facebook.rucinskic.calculator.app.builder.ExpressionState;
+import com.facebook.rucinskic.calculator.app.logic.builder.ExpressionState;
 
 /**
  * Created by Christopher on 8/22/2014.

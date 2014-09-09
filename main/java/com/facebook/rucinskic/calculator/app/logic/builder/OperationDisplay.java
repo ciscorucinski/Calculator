@@ -1,9 +1,8 @@
-package com.facebook.rucinskic.calculator.app.builder;
+package com.facebook.rucinskic.calculator.app.logic.builder;
 
 import java.util.EnumMap;
-import java.util.Map;
 
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.*;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.*;
 
 /**
  * Created by Christopher on 8/11/2014.

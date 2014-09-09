@@ -1,12 +1,12 @@
-package com.facebook.rucinskic.calculator.app.logic;
+package com.facebook.rucinskic.calculator.app.logic.display;
 
-import com.facebook.rucinskic.calculator.app.builder.OperationDisplay;
-import com.facebook.rucinskic.calculator.app.strategy.Operation;
-import com.facebook.rucinskic.calculator.app.strategy.algorithm.Add;
-import com.facebook.rucinskic.calculator.app.strategy.algorithm.Divide;
-import com.facebook.rucinskic.calculator.app.strategy.algorithm.Multiple;
-import com.facebook.rucinskic.calculator.app.strategy.algorithm.Subtract;
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.Display.*;
+import com.facebook.rucinskic.calculator.app.logic.builder.OperationDisplay;
+import com.facebook.rucinskic.calculator.app.logic.strategy.Operation;
+import com.facebook.rucinskic.calculator.app.logic.strategy.algorithm.Add;
+import com.facebook.rucinskic.calculator.app.logic.strategy.algorithm.Divide;
+import com.facebook.rucinskic.calculator.app.logic.strategy.algorithm.Multiple;
+import com.facebook.rucinskic.calculator.app.logic.strategy.algorithm.Subtract;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.Display.*;
 
 public enum BinaryOperation {
 

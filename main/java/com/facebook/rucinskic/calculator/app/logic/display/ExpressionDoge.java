@@ -1,4 +1,6 @@
-package com.facebook.rucinskic.calculator.app.test;
+package com.facebook.rucinskic.calculator.app.logic.display;
+
+import com.facebook.rucinskic.calculator.app.logic.display.*;
 
 /**
  * Created by Christopher on 8/24/2014.
@@ -19,7 +21,7 @@ public enum ExpressionDoge implements IExpression {
         @Override
         public String formatRealExpression() {
 
-            return new Number(Display.state.getTotal())
+            return new com.facebook.rucinskic.calculator.app.logic.display.Number(Display.state.getTotal())
                     .setMaximumDecimalPlace(2)
                     .toString();
 

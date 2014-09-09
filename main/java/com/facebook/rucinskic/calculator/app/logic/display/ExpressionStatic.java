@@ -1,17 +1,20 @@
-package com.facebook.rucinskic.calculator.app.test;
+package com.facebook.rucinskic.calculator.app.logic.display;
+
+import com.facebook.rucinskic.calculator.app.logic.display.*;
+import com.facebook.rucinskic.calculator.app.logic.display.Number;
 
 /**
  * Created by Christopher on 7/9/2014.
  */
-public enum Expression implements IExpression {
+public enum ExpressionStatic implements IExpression {
 
-    Number1 ("%s") {
+    Number1("%s") {
 
         @Override
         public String formatRealExpression() {
 
-            return Number.parse(Display.state.getFirstNumber())
-                    .setMaximumDecimalPlace(2)
+            return com.facebook.rucinskic.calculator.app.logic.display.Number.parse(Display.state.getFirstNumber())
+                    .setMaximumDecimalPlace(6)
                     .toString();
 
         }
@@ -26,24 +29,24 @@ public enum Expression implements IExpression {
         }
 
     },
-    Number2 ("%s") {
+    Number2("%s") {
 
         @Override
         public String formatRealExpression() {
 
             return Number.parse(Display.state.getSecondNumber())
-                    .setMaximumDecimalPlace(2)
+                    .setMaximumDecimalPlace(6)
                     .toString();
 
         }
     },
-    Result  (" = %s") {
+    Result(" = %s") {
 
         @Override
         public String formatRealExpression() {
 
             return Number.parse(Display.state.getTotal())
-                    .setMaximumDecimalPlace(4)
+                    .setMaximumDecimalPlace(10)
                     .toString();
 
         }
@@ -51,7 +54,7 @@ public enum Expression implements IExpression {
 
     private final String defaultFormat;
 
-    Expression(final String format) { this.defaultFormat = format; }
+    ExpressionStatic(final String format) { this.defaultFormat = format; }
 
     @Override
     public String getExpression() { return defaultFormat.replace("%s", formatRealExpression()); }

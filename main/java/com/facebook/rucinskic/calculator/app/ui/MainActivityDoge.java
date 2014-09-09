@@ -4,10 +4,11 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 import com.facebook.rucinskic.calculator.app.R;
-import com.facebook.rucinskic.calculator.app.builder.ExpressionState;
-import com.facebook.rucinskic.calculator.app.test.ExpressionDoge;
+import com.facebook.rucinskic.calculator.app.logic.builder.ExpressionState;
+import com.facebook.rucinskic.calculator.app.logic.display.ExpressionDoge;
+import com.facebook.rucinskic.calculator.app.ui.interfaces.BaseCalculatorActivity;
 
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.*;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.*;
 
 /**
  * Created by Christopher on 8/1/2014.

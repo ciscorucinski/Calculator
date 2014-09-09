@@ -1,4 +1,4 @@
-package com.facebook.rucinskic.calculator.app.test;
+package com.facebook.rucinskic.calculator.app.logic.display;
 
 import java.text.DecimalFormat;
 

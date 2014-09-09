@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 import com.facebook.rucinskic.calculator.app.R;
-import com.facebook.rucinskic.calculator.app.builder.ExpressionState;
-import com.facebook.rucinskic.calculator.app.test.Expression;
+import com.facebook.rucinskic.calculator.app.logic.display.Expression;
+import com.facebook.rucinskic.calculator.app.ui.interfaces.BaseCalculatorActivity;
 
-import static com.facebook.rucinskic.calculator.app.logic.BinaryOperation.*;
+import static com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation.*;
 
 public class MainActivity extends BaseCalculatorActivity {
 

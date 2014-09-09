@@ -1,6 +1,6 @@
-package com.facebook.rucinskic.calculator.app.strategy;
+package com.facebook.rucinskic.calculator.app.logic.strategy;
 
-import com.facebook.rucinskic.calculator.app.strategy.algorithm.IOperationStrategy;
+import com.facebook.rucinskic.calculator.app.logic.strategy.algorithm.IOperationStrategy;
 
 /**
  * Created by Christopher on 7/4/2014.

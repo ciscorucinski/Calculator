@@ -1,7 +1,7 @@
-package com.facebook.rucinskic.calculator.app.ui;
+package com.facebook.rucinskic.calculator.app.ui.interfaces;
 
-import com.facebook.rucinskic.calculator.app.builder.ExpressionState;
-import com.facebook.rucinskic.calculator.app.logic.BinaryOperation;
+import com.facebook.rucinskic.calculator.app.logic.builder.ExpressionState;
+import com.facebook.rucinskic.calculator.app.logic.display.BinaryOperation;
 
 /**
  * Created by Christopher on 7/31/2014.
